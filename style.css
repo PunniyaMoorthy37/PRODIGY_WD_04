@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   background: #000000;
+   width: 100%;
+  height: 100vh;
+  color: #fff;
+   
+}
+.Home{
+    margin-top: 8%;
+}
+.header{
+    transition: 0.5s ease-in-out;
+  
+}
+
+nav{
+    width: 100%;
+   
+    display: flex;
+    background-color: #353b48;
+  
+
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    overflow-y:hidden;
+    z-index: 1;
+
+}
+
+.logo{
+    font-size:40px;
+    margin-left: 8%;
+    
+}
+.logo a{
+   
+    text-decoration: none;
+    color: #fff;
+    
+}
+.logo a span{
+    color: crimson;
+}
+
+ul{
+    display: flex;
+    margin-left: 80%;
+    
+}
+ul li{
+    display: inline-block;
+    margin: 10px 15px;
+    list-style: none;
+    font-size: 25px;
+    
+}
+ul li a{
+    position: relative;
+    text-decoration: none;
+   color: #fff;
+    transition: 0.5s;
+  
+}
+ul li a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid crimson;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+ul li a:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+ul li a:hover{
+    color: crimson;
+}
+.themes{
+    margin: 10px 35px;
+    
+
+}
+.home-content{
+  margin-top: 18%;
+  margin-left: 8%;
+  display: flex;
+ 
+    position: relative;
+    
+   
+}
+ .home-text h3{
+    
+    font-size: 40px;
+    
+}
+.home-text h1{
+    
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top:10px ;
+   
+    
+}
+.home-text h4{
+    
+    font-size: 32px;
+    font-weight: 700;
+    padding-top:10px ;
+    
+}
+.home-text h4 span{
+    color: crimson;
+}
+.img{
+    
+    
+    margin-left: 15%;
+    
+
+}
+.icons{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 30px;
+    font-size: 25px;
+    
+}
+
+
+.icons .github i{
+    border: 2px solid crimson;
+    border-radius:50% ;
+    padding: 5px 10px;
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+}
+.icons .linkedin i{
+    border: 2px solid crimson;
+    border-radius:50% ;
+    padding: 5px 10px;
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+}
+.icons .instagram i{
+    border: 2px solid crimson;
+    border-radius:50% ;
+    padding: 5px 10px;
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+}
+.icons .twitter i{
+    border: 2px solid crimson;
+    border-radius:50% ;
+    padding: 5px 10px;
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+}
+.icons .github i:hover{
+    background:crimson;
+    color: #000000;
+    box-shadow: 0 0 5px crimson,0 0 20px crimson,0 0 35px crimson,0 0 75px crimson,0 0 175px crimson;
+    
+}
+.icons .linkedin i:hover{
+    background:crimson;
+    color: #000000;
+    box-shadow: 0 0 5px crimson,0 0 20px crimson,0 0 35px crimson,0 0 75px crimson,0 0 175px crimson;
+    
+}
+.icons .instagram i:hover{
+    background:crimson;
+    color: #000000;
+    box-shadow: 0 0 5px crimson,0 0 20px crimson,0 0 35px crimson,0 0 75px crimson,0 0 175px crimson;
+    
+}
+.icons .twitter i:hover{
+    background:crimson;
+    color: #000000;
+    box-shadow: 0 0 5px crimson,0 0 20px crimson,0 0 35px crimson,0 0 75px crimson,0 0 175px crimson;
+    
+}
+
+.home-content .btn{
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    
+    font-weight: bold;
+    background: crimson;
+    border: none;
+    box-shadow: 0 0 5px crimson,0 0 25px crimson;
+    transition: all 0.6s ease-in-out;
+    
+   
+}
+.home-content .btn:hover{
+    box-shadow: 0 0 5px crimson,0 0 25px crimson,0 0 50px crimson,0 0 100px crimson,0 0 200px crimson;
+}
+
+
+
+/*-----About Section-------*/
+
+
+.About{
+    margin-top: 8%;
+    padding: 80px 0;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 8%;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    border-radius: 40px;
+    width: 70%;
+    box-shadow: 0 0 5px crimson,0 0 25px crimson;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 h1{
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+.about-col-2 h1 span{
+    color: crimson;
+}
+.about-col-2 p{
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.about-col-2 p span{
+    color: crimson;
+}
+.row .btn{
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000000;
+   
+    font-size: 20px;
+    font-weight: bold;
+    background: crimson;
+    border: none;
+    box-shadow: 0 0 5px crimson,0 0 25px crimson;
+    transition: all 0.6s ease-in-out;
+    
+   
+}
+.row .btn:hover{
+    box-shadow: 0 0 5px crimson,0 0 25px crimson,0 0 50px crimson,0 0 100px crimson,0 0 200px crimson;
+}
+
+.dark{
+    background: #fff;
+    color: #000000;
+}
+.dark a{
+    color: #000000;
+}
+
+
+/*-----Skills Section-------*/
+
+
+.Skills{
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+.skill-col-1{
+    flex-basis: 35%;
+    margin-top: 30px;
+
+}
+.skill-col-1 li{
+    list-style: none;
+    margin-top: 40px;
+}
+.skill-col-2 li{
+    list-style: none;
+    margin-top: 40px;
+}
+.skill-col-1 h3{
+    
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skill-col-2{
+    flex-basis: 35%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+.skill-col-2 h3{
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.Skills h1{
+    text-align: center;
+    
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+   
+
+}
+.Skills h1 span{
+    color: crimson;
+}
+.Skills .container h3{
+    margin: 5px;
+}
+.Skills .container li{
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0px;
+    padding: 10px;
+
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgb(220, 20, 60) 0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.js{
+    width: 45%;
+    animation: js 3s;
+}
+.figma{
+    width: 75%;
+    animation: figma 3s;
+}
+.ph{
+    width: 50%;
+    animation: ph 3s;
+}
+.ai{
+    width: 30%;
+    animation: ai 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+    
+}
+@keyframes figma {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+    
+}
+@keyframes ph {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+    
+}
+@keyframes ai {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+    
+}
+
+
+
+/*-----Projects  Section-------*/
+
+
+.Project{
+    margin-top: 8%;
+}
+.Project h1{
+    text-align: center;
+   
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 8%;
+   
+}
+.Project h1 span{
+    color: crimson;
+}
+.Project .row{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+.row .card{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px crimson,0 0 25px crimson;
+    transition: 0.5s;
+}
+.row .card:hover{
+    height: 400px;
+   
+    transition: all 0.6s ease-in-out;
+}
+.row .card .img{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background: #fff;
+   margin-left: -3px;
+   margin-top: 20px;
+   border-radius: 12px;
+   transition: 0.5s;
+    overflow: hidden;
+}
+.row .card:hover .img{
+    margin-top: -100px;
+    scale: 0.75;
+    box-shadow: 0,15px,45px rgba(0,0,0,0.2);
+}
+.row .card .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.row .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+  overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.row .card:hover .content{
+    top: 130px;
+    height: 250px;
+}
+.row .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+   
+}
+.row .card .content p{
+    color: #353b48;
+    margin-top: 10px;
+}
+.row .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: crimson;
+    color: #fff;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
+
+
+/*-----Contact Section-------*/
+
+
+.Contact{
+    margin-top: 8%;
+   
+}
+.Contact h1{
+    text-align: center;
+   
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.Contact h1 span{
+    color: crimson;
+}
+.Contact .content{
+    
+    text-align: center;
+}
+
+.Contact .content h3{
+    font-size: 27px;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+.Contact .content .mail{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+   
+}
+
+.Contact .content .mail p{
+       margin-left: 50px;
+}
+.Contact .content .mail i{
+    margin-right: 5px;
+}
+.Contact .content .phone {
+    font-size: 20px;
+    font-weight: 700;
+}
+.Contact .content .phone i{
+    margin-right: 5px;
+}
+
+
+/*-----Contact Section-------*/
+
+
+
+
+.footer{
+   
+    background: #353b48;
+   
+    margin-top: 8%;
+
+   
+   
+}
+.footer .content{
+    display: flex;
+  place-content: calc(center);
+
+}
+.footer .content .icons{
+    margin-left: 50%;
+    font-size: 20px;
+}
+.footer .content h3{
+  
+    padding: 30px;
+    width: 100%;
+    margin-left: 8%;
+}
